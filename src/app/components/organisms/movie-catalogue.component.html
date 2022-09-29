@@ -1,0 +1,8 @@
+<section class="movie-catalogue-container">
+  <app-movie-details [selectedMovie]="selectedMovie"></app-movie-details>
+  <app-movie-list
+    (movieItemSelectedEvent)="onMovieSelected($event)"
+    [movieListData]="movieListData"
+  >
+  </app-movie-list>
+</section>
